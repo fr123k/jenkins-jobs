@@ -1,0 +1,22 @@
+---
+jobs:
+- repository: https://github.com/fr123k/jenkins-aws-pulumi
+  jobDSLRevision: master
+  jobDSLPath: jenkins/jobDSL
+  removedJobAction: IGNORE
+- repository: https://github.com/fr123k/packer-images
+  jobDSLRevision: fr/setup_packer_job_for_jenkins_master
+  jobDSLPath: jenkins/jobDSL/aws
+  removedJobAction: IGNORE
+- repository: https://github.com/fr123k/nmuxj
+  jobDSLRevision: master
+  jobDSLPath: jenkins/jobDSL
+  removedJobAction: IGNORE
+- repository: https://github.com/fr123k/jenkins-blazemeter-example
+  jobDSLRevision: master
+  jobDSLPath: jobDSL
+  removedJobAction: IGNORE
+- repository: https://github.com/fr123k/jocker-agents
+  jobDSLRevision: master
+  jobDSLPath: jenkins/jobDSL
+  removedJobAction: IGNORE
