@@ -20,3 +20,7 @@ jobs:
   jobDSLRevision: master
   jobDSLPath: jenkins/jobDSL
   removedJobAction: IGNORE
+- repository: https://github.com/fr123k/jenkins-plugin-job-agents-on-demand
+  jobDSLRevision: fr/refactoring
+  jobDSLPath: jenkins/jobDSL
+  removedJobAction: IGNORE
