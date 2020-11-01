@@ -5,7 +5,7 @@ jobs:
   jobDSLPath: jenkins/jobDSL
   removedJobAction: IGNORE
 - repository: https://github.com/fr123k/packer-images
-  jobDSLRevision: fr/setup_packer_job_for_jenkins_master
+  jobDSLRevision: master
   jobDSLPath: jenkins/jobDSL/aws
   removedJobAction: IGNORE
 - repository: https://github.com/fr123k/nmuxj
