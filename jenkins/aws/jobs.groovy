@@ -13,8 +13,10 @@ node('master') {
     stage('Seed') {
         def jobsList = parseJobList(readFile("aws/jobs.yaml"))
 
+        credentialsId="deploy-key-shared-library"
+
         jobsList.jobs.each{ job ->
-            createJobs("${job.repository}", "${job.jobDSLRevision}", "${job.jobDSLPath}", "${job.removedJobAction}")
+            createJobs("${job.repository}", "${job.jobDSLRevision}", "${credentialsId}",  "${job.jobDSLPath}", "${job.removedJobAction}")
         }
     }
 }
